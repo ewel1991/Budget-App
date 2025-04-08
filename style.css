@@ -1,0 +1,57 @@
+body{
+  
+  margin:0;
+
+  background-image: url(./images/bac5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px);           
+}
+
+.w-50 {
+  width: 50%;
+  margin-left: 0; 
+}
+
+
+.lead {
+  margin-bottom: 5rem; 
+}
+
+
+.btn-brown {
+  background-color: #6f4f28; 
+  border-color: #6f4f28;     
+  color: white;              
+}
+
+.btn-brown:hover {
+  background-color: #8e6b3d; 
+  border-color: #8e6b3d;     
+  color: white;              
+}
+
+
+
+
+@media (min-width: 1300px) {
+  
+.first{
+  width: 50%;
+  height: 300px;
+  margin-left: 300px;
+}
+
+.display-5 {
+  font-size: 4rem; 
+}
+
+.lead {
+  font-size: 1.5rem; 
+}
+}
