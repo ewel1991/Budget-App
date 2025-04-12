@@ -1,4 +1,4 @@
-body{
+/*body{
   
   margin:0;
 
@@ -8,10 +8,33 @@ body{
   color: white;
 
 }
+*/
+
+body{
+
+  background-image: url(./images/bac2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0; 
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+.container-half{
+
+margin-top: 10%;
+
+}
+
 
 .text-overlay {
   background-color: rgba(0, 0, 0, 0.3); 
-  backdrop-filter: blur(5px);           
+  backdrop-filter: blur(5px);      
+    
+  
 }
 
 /*
@@ -31,7 +54,7 @@ body{
 }
 
 .btn {
-  font-size: 16px; /* Ustal rozmiar czcionki przycisków */
+  font-size: 16px; 
 }
 
 .w-50 {
@@ -48,7 +71,8 @@ body{
 .btn-brown {
   background-color: #6f4f28; 
   border-color: #6f4f28;     
-  color: white;              
+  color: white;  
+  border-color: #4e3629;            
 }
 
 .btn-brown:hover {
@@ -56,6 +80,7 @@ body{
   border-color: #8e6b3d;     
   color: white;              
 }
+
 
 .btn-outline-danger{
   background-color: white;
@@ -65,10 +90,61 @@ body{
   background-color: white;
 }
 
+.btn-same-height {
+  height: 58px;
+}
 
 .custom-close {
 
   background-color:  #8e6b3d;;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; 
+  
+} 
+
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px);     
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bi-house-door-fill{
+  color:  #8e6b3d;;
+}
+
+.nav-link {
+  color: white; 
+}
+
+.nav-link:hover {
+  color: #8e6b3d; 
+  
+}
+
+.container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.centered-container {  
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px);   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  padding: 50px;
+  margin: auto;
 }
 
 
