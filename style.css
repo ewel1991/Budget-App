@@ -260,17 +260,5 @@ input[type="date"] {
 
 @media (min-width: 1300px) {
   
-.first{
-  width: 50%;
-  height: 300px;
-  margin-left: 300px;
-}
 
-.display-5 {
-  font-size: 4rem; 
-}
-
-.lead {
-  font-size: 1.5rem; 
-}
 }
