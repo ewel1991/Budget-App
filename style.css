@@ -18,6 +18,23 @@ margin-top: 10%;
 
 }
 
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* pełna wysokość widoku */
+}
+
+.p-5.pb-4 {
+  display: flex;
+  justify-content: space-between; /* Rozstawia elementy na przeciwległe strony */
+  align-items: center; /* Wyrównuje je w pionie */
+}
+
+h1 {
+  margin: 0; /* Usuwa margines wokół napisu */
+}
+
 
 .text-overlay {
   background-color: rgba(0, 0, 0, 0.3); 
@@ -44,10 +61,6 @@ margin-top: 10%;
 
 input::placeholder {
   font-size: 1.5rem;
-}
-
-.modal-header h1 {
-  font-size: 2rem;
 }
 
 .btn {
