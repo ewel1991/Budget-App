@@ -88,11 +88,11 @@ input::placeholder {
 }
 
 .btn-same-height {
-  height: 3.5rem;  /* Ustaw wysokość przycisków na 3.5rem (taką samą jak pola formularza) */
-  font-size: 1rem;  /* Dopasowanie rozmiaru czcionki do formularza */
-  display: flex; /* Upewnij się, że elementy wewnątrz przycisku są wycentrowane */
-  align-items: center; /* Wyrównaj ikony i tekst na środku */
-  justify-content: center; /* Wyrównaj ikony i tekst na środku */
+  height: 3.5rem;  
+  font-size: 1rem;  
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .btn-outline-danger, .btn-outline-primary {
@@ -120,9 +120,6 @@ input::placeholder {
   height: 100%; 
 }
 
-.form-control {
-  margin-bottom: 1.5rem; 
-}
 
 .form-check {
   margin-bottom: 1.5rem; 
@@ -188,9 +185,45 @@ input::placeholder {
 }
 
 
+.small-container {  
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px);   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%; 
+  padding: 50px;
+  margin: 2% auto;
+ 
+}
+
 .centered-container p {
   font-size: 1.5rem;
   line-height: 1.6;
+}
+
+
+.form-control,
+.form-select,
+textarea.form-control {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.4;
+  height: auto; /
+}
+
+.input1{
+  font-size: 1.5rem
+}
+
+input[type="date"] {
+  font-size: 1.5rem !important;
+  padding: 1rem !important;
+  height: 3.5rem !important;
+  width: 100% !important;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1300px) {
