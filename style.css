@@ -373,7 +373,25 @@ th {
     text-align: center;
   }
 
+  h4 {
+    font-size: 1.0rem;
+    line-height: 1.2;
+  }
 
+  #balanceMessage{
+    font-size: 1.2rem;
+  }
+
+
+  .form-control,
+  .form-select,
+  textarea.form-control {
+  font-size: 1.0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.4;
+  height: auto; /
+}
   .form-wrapper {
     min-width: 250px;
     width: 100%;
@@ -393,5 +411,14 @@ th {
     padding: 10px;
    
   }
+
+  .container{
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(5px); 
+    padding: 10px;
+    width: 80%; 
+  }
+
+
 
 }
