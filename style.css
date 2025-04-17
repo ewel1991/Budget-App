@@ -373,6 +373,25 @@ th {
     text-align: center;
   }
 
+
+  .form-wrapper {
+    min-width: 250px;
+    width: 100%;
+    margin: auto auto;
+  }
   
+
+  .small-container {  
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(5px);   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    margin: 50px auto;
+    padding: 10px;
+   
+  }
 
 }
