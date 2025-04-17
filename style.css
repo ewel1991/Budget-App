@@ -284,6 +284,10 @@ th {
     font-size: 1rem;
   }
 
+  .btn {
+    font-size: 1rem;
+  }
+
   .btn-brown {
     font-size: 1rem;
     margin-top: 10px;
@@ -296,4 +300,39 @@ th {
   .text-overlay {
     padding: 1rem;
   }
+
+  .form-wrapper {
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .form-floating > .form-control {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .form-floating > label {
+    font-size: 0.9rem;
+  }
+
+  .custom-close {
+    width: 24px;
+    height: 24px;
+  }
+
+  .form-check-label {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .form-check-input {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .container-form {
+    padding: 1rem;
+  }
+
 }
