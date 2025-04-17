@@ -386,7 +386,7 @@ th {
   .form-control,
   .form-select,
   textarea.form-control {
-  font-size: 1.0rem;
+  font-size: 1.0rem !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.4;
@@ -419,6 +419,20 @@ th {
     width: 80%; 
   }
 
+  input[type="date"] {
+    font-size: 1.0rem !important;
+    padding: 1rem !important;
+    height: 3.5rem !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
 
 
+  .form-label.input1 {
+    font-size: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 1.0rem;
+  }
 }
