@@ -22,17 +22,17 @@ margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* pełna wysokość widoku */
+  min-height: 100vh; 
 }
 
 .p-5.pb-4 {
   display: flex;
-  justify-content: space-between; /* Rozstawia elementy na przeciwległe strony */
-  align-items: center; /* Wyrównuje je w pionie */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 h1 {
-  margin: 0; /* Usuwa margines wokół napisu */
+  margin: 0; /
 }
 
 
@@ -84,6 +84,8 @@ input::placeholder {
   font-size: 1.5rem;    
   margin-top: 20px;  
 }
+
+
 
 .btn-brown:hover {
   background-color: #8e6b3d; 
@@ -184,6 +186,12 @@ input::placeholder {
 }
 
 
+.container{
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px); 
+  padding: 50px;
+}
+
 .centered-container {  
   background-color: rgba(0, 0, 0, 0.3); 
   backdrop-filter: blur(5px);   
@@ -257,8 +265,35 @@ input[type="date"] {
   border-color: #6f4f37; 
 }
 
+th {
+  color: #6f4f37 !important;
+}
 
-@media (min-width: 1300px) {
+#balanceMessage{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
   
+  .w-50 {
+    width: 100% !important;
+  }
 
+  .lead {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .btn-brown {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay {
+    padding: 1rem;
+  }
 }
