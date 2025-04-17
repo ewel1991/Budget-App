@@ -35,7 +35,7 @@ margin-top: 10%;
 }
 
 h1 {
-  margin: 0; /
+  margin: 0; 
 }
 
 
@@ -80,8 +80,7 @@ input::placeholder {
 
 
 .btn-brown {
-  background-color: #6f4f28; 
-  border-color: #6f4f28;     
+  background-color: #6f4f28;    
   color: white;  
   border-color: #4e3629;      
   font-size: 1.5rem;    
@@ -92,7 +91,7 @@ input::placeholder {
 
 .btn-brown:hover {
   background-color: #8e6b3d; 
-  border-color: #8e6b3d;     
+  border-color: #4e3629;    
   color: white;              
 }
 
@@ -238,7 +237,7 @@ textarea.form-control {
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.4;
-  height: auto; /
+  height: auto; 
 }
 
 .input1{
@@ -262,7 +261,7 @@ input[type="date"] {
 
 .form-check-input:checked {
   background-color: #6f4f37; 
-  border-color: #6f4f37; 
+  border-color: #4e3629;
 }
 
 
@@ -390,7 +389,7 @@ th {
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.4;
-  height: auto; /
+  height: auto; 
 }
   .form-wrapper {
     min-width: 250px;
