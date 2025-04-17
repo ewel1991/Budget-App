@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przeglądaj bilans</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="container-half">
+    <header class="navbar navbar-expand-sm p-3 custom-navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 me-2 btn-brown"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+            </svg></a></li>
+            <li class="nav-item"><a href="income.html" class="nav-link px-2 me-2 btn-brown">Dodaj przychód</a></li>
+            <li class="nav-item"><a href="expenses.html" class="nav-link px-2 me-2 btn-brown">Dodaj wydatek</a></li>
+            <li class="nav-item"><a href="balance.html" class="nav-link px-2 me-2 btn-brown">Przeglądaj bilans</a></li>
+            <li class="nav-item"><a href="settings.html" class="nav-link px-2 me-2 btn-brown">Ustawienia</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 me-2 btn-brown">Wyloguj się</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Zawartość strony -->
+  <div class="container mt-5 rounded-4 text-white">
+    <h2>Podsumowanie przychodów i wydatków</h2>
+
+    <div class="mb-3 mt-4">
+      <h4 class="mb-3">Wybierz okres:</h4>
+      <select id="periodSelect" class="form-select w-auto">
+        <option value="currentMonth" selected>Bieżący miesiąc</option>
+        <option value="previousMonth">Poprzedni miesiąc</option>
+        <option value="currentYear">Bieżący rok</option>
+        <option value="custom">Niestandardowy</option>
+      </select>
+    </div>
+
+    <!-- Zakres dat (dla "Niestandardowego" okresu) -->
+    <div id="customDateRange" class="mt-4" style="display: none;">
+      <h4 class="mb-3 me-4">Data początkowa</h4>
+      <input type="date" id="startDate" class="form-control mb-4">
+      <h4 class="mb-3 ">Data końcowa</h4>
+      <input type="date" id="endDate" class="form-control">
+    </div>
+
+    <!-- Tabela przychodów -->
+    <div class="mt-5">
+      <h4>Przychody</h4>
+      <table class="table table-bordered">
+        <thead >
+          <tr>
+            <th>Kategoria</th>
+            <th>Kwota</th>
+          </tr>
+        </thead>
+        <tbody id="incomeTableBody">
+          <!-- Dane przychodów zostaną dynamicznie dodane przez JavaScript -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Suma</strong></td>
+            <td id="totalIncome">0 PLN</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- Tabela wydatków -->
+    <div class="mt-5">
+      <h4>Wydatki</h4>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Kategoria</th>
+            <th>Kwota</th>
+          </tr>
+        </thead>
+        <tbody id="expenseTableBody">
+          <!-- Dane wydatków zostaną dynamicznie dodane przez JavaScript -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Suma</strong></td>
+            <td id="totalExpense">0 PLN</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- Bilans -->
+    <div class="mt-5">
+
+      <h4 id="balanceAmount" class="mb-4">Bilans: 0 PLN</h4>
+      <p id="balanceMessage" class="text-success">Gratulacje. Świetnie zarządzasz finansami!</p>
+    </div>
+
+    
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
